@@ -43,4 +43,49 @@ print(f"Mi nombre es {name} {surname} y mi edad es {edad}") #Esta dicen en el cu
 #       Desempaquetado de caracteres
 #####################################
 
-#Se bvan repartiendo los caracteres del string por las variables
+#Se van repartiendo los caracteres del string por las variables
+lenguaje = "Python"
+a, b, c, d, e, f =lenguaje
+print(a)
+print(e)
+
+
+#################################
+#       Division de cadenas
+#################################
+lenguaje_slice = lenguaje[1:3]  #En este caso pilla las letras 1 y2
+print(lenguaje_slice)
+
+lenguaje_slice = lenguaje[1:]  #En este caso pilla las letras 1 al final
+print(lenguaje_slice)
+
+lenguaje_slice = lenguaje[:4]  #En este caso pilla las 4 primerasletras 
+print(lenguaje_slice)
+
+lenguaje_slice = lenguaje[-2]  #En este caso pilla la penultima letra
+print(lenguaje_slice)
+
+lenguaje_slice = lenguaje[0:6:2]  #En este caso pilla el caracter 0 el 2 y el 4
+print(lenguaje_slice)
+
+#################################
+#      Reverse de cadenas
+#################################
+
+lenguaje_reverse = lenguaje[::-1]  #En este caso pilla lel reverso
+print(lenguaje_reverse)
+
+
+#################################
+#      Funciones de cadenas
+#################################
+print(lenguaje.capitalize())        #Se pone la primera letra en mayúscula
+print(lenguaje.upper())             #Se pone todo en mayúscula
+print(lenguaje.count("t"))          #Cuentan cuantas t hay en la cadena
+print(lenguaje.isnumeric())         #Evalúa si es numérico (si fuese "3" sería TRUE)
+print(lenguaje.lower())             #Se pone todo en minúscula
+print(lenguaje.upper().isupper())   #Pone en mayúscula y mira si está en mayúsculas
+print(lenguaje.lower().isupper())   #Pone en minúscula y mira si está en mayúsculas
+print(lenguaje.startswith("Py"))    #Empieza por..
+print("Py" == "Py")                 #Evalúa si son iguales
+
